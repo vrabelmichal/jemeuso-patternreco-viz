@@ -36,6 +36,7 @@
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
+#include <iostream>
 
 namespace Ui {
 
@@ -48,7 +49,7 @@ namespace Ui {
         QAction *actionNext_event;
         QAction *actionClose;
         QAction *actionRun_Reco;
-        QAction *actionRecent_Files;
+        QAction *actionNoRecentFiles;
         QWidget *centralWidget;
         QGridLayout *gridLayout_5;
         QSplitter *splitter_viz_processing;
@@ -85,6 +86,7 @@ namespace Ui {
         QMenu *menuFile;
         QMenu *menuEvent;
         QMenu *menuESAF;
+        QMenu *menuRecent_Files;
         QToolBar *mainToolBar;
         QStatusBar *statusBar;
 
@@ -93,20 +95,28 @@ namespace Ui {
             if (MainWindow->objectName().isEmpty())
                 MainWindow->setObjectName(QStringLiteral("MainWindow"));
             MainWindow->resize(800, 600);
+
             actionOpen = new QAction(MainWindow);
             actionOpen->setObjectName(QStringLiteral("actionOpen"));
+
             actionExit = new QAction(MainWindow);
             actionExit->setObjectName(QStringLiteral("actionExit"));
+
             actionSelect_event = new QAction(MainWindow);
             actionSelect_event->setObjectName(QStringLiteral("actionSelect_event"));
+
             actionNext_event = new QAction(MainWindow);
             actionNext_event->setObjectName(QStringLiteral("actionNext_event"));
+
             actionClose = new QAction(MainWindow);
             actionClose->setObjectName(QStringLiteral("actionClose"));
+
             actionRun_Reco = new QAction(MainWindow);
             actionRun_Reco->setObjectName(QStringLiteral("actionRun_Reco"));
-            actionRecent_Files = new QAction(MainWindow);
-            actionRecent_Files->setObjectName(QStringLiteral("actionRecent_Files"));
+
+//            actionRecent_Files = new QAction(MainWindow);
+//            actionRecent_Files->setObjectName(QStringLiteral("actionRecent_Files"));
+
             centralWidget = new QWidget(MainWindow);
             centralWidget->setObjectName(QStringLiteral("centralWidget"));
             gridLayout_5 = new QGridLayout(centralWidget);
@@ -117,6 +127,8 @@ namespace Ui {
             splitter_viz_processing = new QSplitter(centralWidget);
             splitter_viz_processing->setObjectName(QStringLiteral("splitter_viz_processing"));
             splitter_viz_processing->setOrientation(Qt::Vertical);
+
+
             splitter_viz_tabs = new QSplitter(splitter_viz_processing);
             splitter_viz_tabs->setObjectName(QStringLiteral("splitter_viz_tabs"));
             splitter_viz_tabs->setOrientation(Qt::Horizontal);
@@ -262,23 +274,29 @@ namespace Ui {
 
             toolbar_container->addWidget(reco_event_num_go_btn);
 
-
             gridLayout_5->addLayout(toolbar_container, 0, 0, 1, 1);
 
             MainWindow->setCentralWidget(centralWidget);
+
             menuBar = new QMenuBar(MainWindow);
             menuBar->setObjectName(QStringLiteral("menuBar"));
             menuBar->setGeometry(QRect(0, 0, 800, 21));
+
             menuFile = new QMenu(menuBar);
             menuFile->setObjectName(QStringLiteral("menuFile"));
+
             menuEvent = new QMenu(menuBar);
             menuEvent->setObjectName(QStringLiteral("menuEvent"));
+
             menuESAF = new QMenu(menuBar);
             menuESAF->setObjectName(QStringLiteral("menuESAF"));
+
             MainWindow->setMenuBar(menuBar);
+
             mainToolBar = new QToolBar(MainWindow);
             mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
             MainWindow->addToolBar(Qt::TopToolBarArea, mainToolBar);
+
             statusBar = new QStatusBar(MainWindow);
             statusBar->setObjectName(QStringLiteral("statusBar"));
             MainWindow->setStatusBar(statusBar);
@@ -287,7 +305,8 @@ namespace Ui {
             menuBar->addAction(menuEvent->menuAction());
             menuBar->addAction(menuESAF->menuAction());
             menuFile->addAction(actionOpen);
-            menuFile->addAction(actionRecent_Files);
+            //menuFile->addAction(actionRecent_Files);
+            menuRecent_Files = menuFile->addMenu(QStringLiteral("menuRecent_Files"));
             menuFile->addAction(actionClose);
             menuFile->addSeparator();
             menuFile->addAction(actionExit);
@@ -295,38 +314,79 @@ namespace Ui {
             menuEvent->addAction(actionNext_event);
             menuESAF->addAction(actionRun_Reco);
 
+
+            // TODO: add recent files (trigger event??)
+            actionNoRecentFiles = menuRecent_Files->addAction("NoRecentFiles");
+
             retranslateUi(MainWindow);
 
             algo_tabs_container->setCurrentIndex(0);
 
-
             QMetaObject::connectSlotsByName(MainWindow);
+
         } // setupUi
 
         void retranslateUi(QMainWindow *MainWindow)
         {
             MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", 0));
-            actionOpen->setText(QApplication::translate("MainWindow", "Open File", 0));
-            actionExit->setText(QApplication::translate("MainWindow", "Exit", 0));
-            actionSelect_event->setText(QApplication::translate("MainWindow", "Select event", 0));
-            actionNext_event->setText(QApplication::translate("MainWindow", "Next event", 0));
-            actionClose->setText(QApplication::translate("MainWindow", "Close File", 0));
-            actionRun_Reco->setText(QApplication::translate("MainWindow", "Run Reco", 0));
-            actionRecent_Files->setText(QApplication::translate("MainWindow", "Recent Files", 0));
+            actionOpen->setText(QApplication::translate("MainWindow", "&Open File", 0));
+            actionExit->setText(QApplication::translate("MainWindow", "E&xit", 0));
+            actionSelect_event->setText(QApplication::translate("MainWindow", "&Select event", 0));
+            actionNext_event->setText(QApplication::translate("MainWindow", "&Next event", 0));
+            actionClose->setText(QApplication::translate("MainWindow", "&Close File", 0));
+            actionRun_Reco->setText(QApplication::translate("MainWindow", "&Run Reco", 0));
+
+            actionNoRecentFiles->setText(QApplication::translate("MainWindow", "No recent files", 0));
+
             algo_tabs_container->setTabText(algo_tabs_container->indexOf(algo_tab_total_counts), QApplication::translate("MainWindow", "TotalCounts", 0));
             algo_tabs_container->setTabText(algo_tabs_container->indexOf(algo_tab_signal_counts), QApplication::translate("MainWindow", "SignalCounts", 0));
             algo_tabs_container->setTabText(algo_tabs_container->indexOf(algo_tab_twophasehough), QApplication::translate("MainWindow", "TwoPhaseHough", 0));
             algo_tabs_container->setTabText(algo_tabs_container->indexOf(algo_tab_kehoughv2), QApplication::translate("MainWindow", "KeHoughV2", 0));
             algo_tabs_container->setTabText(algo_tabs_container->indexOf(algo_tab_kehoughv3), QApplication::translate("MainWindow", "KeHoughV3", 0));
-            processing_title->setText(QApplication::translate("MainWindow", "TextLabel", 0));
+
+            processing_title->setText(QApplication::translate("MainWindow", "Processing", 0));
             processing_toggle_btn->setText(QApplication::translate("MainWindow", "Start", 0));
             reco_file_title->setText(QApplication::translate("MainWindow", "Reco file", 0));
             reco_event_num_title->setText(QApplication::translate("MainWindow", "Event num", 0));
             reco_event_num_go_btn->setText(QApplication::translate("MainWindow", "Go", 0));
-            menuFile->setTitle(QApplication::translate("MainWindow", "File", 0));
-            menuEvent->setTitle(QApplication::translate("MainWindow", "Event", 0));
-            menuESAF->setTitle(QApplication::translate("MainWindow", "ESAF", 0));
+
+            menuFile->setTitle(QApplication::translate("MainWindow", "&File", 0));
+            menuEvent->setTitle(QApplication::translate("MainWindow", "&Event", 0));
+            menuESAF->setTitle(QApplication::translate("MainWindow", "E&SAF", 0));
+
+            menuRecent_Files->setTitle(QApplication::translate("MainWindow", "Recent &Files", 0));
+
         } // retranslateUi
+
+        void initializeDefaults(QMainWindow *MainWindow) {
+            using namespace std;
+
+            const double splitter_processing_perc = 0.10;
+
+            const double splitter_tabs_perc = 0.3;
+
+            QSize splitter_processing_size = splitter_viz_processing->size();
+
+            QList<int> splitter_processing_default_split = {
+                static_cast<int>(ceil((1.-splitter_processing_perc)*splitter_processing_size.height())),
+                static_cast<int>(floor(splitter_processing_perc*splitter_processing_size.height()))
+            };
+
+            splitter_viz_processing->setSizes(splitter_processing_default_split);
+
+
+            QSize splitter_tabs_size = splitter_viz_tabs->size();
+
+            cout << splitter_tabs_size.width() << " " << splitter_tabs_size.width() << endl;
+
+            QList<int> splitter_tabs_default_split = {
+                static_cast<int>(ceil((1.-splitter_tabs_perc)*splitter_tabs_size.width())),
+                static_cast<int>(floor(splitter_tabs_perc*splitter_tabs_size.width()))
+            };
+
+            splitter_viz_tabs->setSizes(splitter_tabs_default_split);
+
+        }
 
     };
 
