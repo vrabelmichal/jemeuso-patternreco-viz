@@ -2,8 +2,8 @@
 // $Id: EShowerStep.cc 860 2004-06-30 20:06:27Z thea $
 // A.Thea created Jun,  9 2004
 
-#include "EShowerStep.hh"
-#include "Etypes.hh"
+#include "root/include/EShowerStep.hh"
+#include "root/include/Etypes.hh"
 
 ClassImp(EShowerStep)
 

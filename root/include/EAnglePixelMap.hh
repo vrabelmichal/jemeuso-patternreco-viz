@@ -15,7 +15,7 @@
 #define __EANGLEPIXELMAP_HH__
 
 #include "TObject.h"
-#include "ERunParsFiller.hh"
+#include "root/include/ERunParsFiller.hh"
 
 ////////////////////////////////////////////////////////////////////////////////
 //                                                                            //

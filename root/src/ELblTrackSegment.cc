@@ -23,7 +23,7 @@
 //   -Valid options: <available options>
 //
 
-#include "ELblTrackSegment.hh"
+#include "root/include/ELblTrackSegment.hh"
 
 ClassImp(ELblTrackSegment)
 

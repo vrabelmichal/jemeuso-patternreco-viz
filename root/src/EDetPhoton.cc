@@ -2,8 +2,8 @@
 // $Id: EDetPhoton.cc 3007 2012-01-11 10:06:56Z fenu $
 //  created May, 18 2004
 
-#include "EDetPhoton.hh"
-#include "Etypes.hh"
+#include "root/include/EDetPhoton.hh"
+#include "root/include/Etypes.hh"
 
 ClassImp(EDetPhoton)
 

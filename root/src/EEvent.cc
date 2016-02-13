@@ -10,22 +10,21 @@
  *                                                                           *
  *****************************************************************************/
 
-#include "EEvent.hh"
-#include "Etypes.hh"
-
-#include "ETruth.hh"
-#include "EHeader.hh"
-#include "EGeometry.hh"
-#include "EDetector.hh"
-#include "ESimpleDetector.hh"
-#include "EShower.hh"
-#include "EAtmosphere.hh"
-#include "EChipTrackTrigger.hh"
-#include "ELblTrackTrigger.hh"
-#include "ERunParameters.hh"
-#include "ELTTTrigger.hh"
-#include "EPTTTrigger.hh"
-#include "ECCB_LTTTrigger.hh"
+#include "root/include/EEvent.hh"
+#include "root/include/Etypes.hh"
+#include "root/include/ETruth.hh"
+#include "root/include/EHeader.hh"
+#include "root/include/EGeometry.hh"
+#include "root/include/EDetector.hh"
+#include "root/include/ESimpleDetector.hh"
+#include "root/include/EShower.hh"
+#include "root/include/EAtmosphere.hh"
+#include "root/include/EChipTrackTrigger.hh"
+#include "root/include/ELblTrackTrigger.hh"
+#include "root/include/ERunParameters.hh"
+#include "root/include/ELTTTrigger.hh"
+#include "root/include/EPTTTrigger.hh"
+#include "root/include/ECCB_LTTTrigger.hh"
 
      ClassImp (EEvent)
      ClassImp (EEvTreeLink)

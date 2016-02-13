@@ -4,19 +4,19 @@
 #include <QDialog>
 
 namespace Ui {
-class SelectEventDialog2;
+class SelectEventDialog;
 }
 
-class SelectEventDialog2 : public QDialog
+class SelectEventDialog : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit SelectEventDialog2(QWidget *parent = 0);
-    ~SelectEventDialog2();
+    explicit SelectEventDialog(QWidget *parent = 0);
+    ~SelectEventDialog();
 
 private:
-    Ui::SelectEventDialog2 *ui;
+    Ui::SelectEventDialog *ui;
 };
 
 #endif // SELECTEVENTDIALOG2_H

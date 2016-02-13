@@ -2,7 +2,7 @@
 // $Id: ERunParameters.cc 2918 2011-06-10 22:22:31Z mabl $
 // M. Pallavicini, A. Thea created Sep, 19 2003
 
-#include "ERunParameters.hh"
+#include "root/include/ERunParameters.hh"
 
 #include "TGeoManager.h"
 #include "TGeoMaterial.h"

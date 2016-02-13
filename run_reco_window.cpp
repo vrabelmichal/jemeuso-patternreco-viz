@@ -1,6 +1,14 @@
-#include "runrecodialog.h"
+#include "run_reco_window.h"
+#include <ui_run_reco_window.h>
 
-RunRecoDialog::RunRecoDialog(QWidget *parent) : QWidget(parent)
+RunRecoWindow::RunRecoWindow(QWidget *parent) :
+    QWidget(parent),
+    ui(new Ui::RunRecoWindow)
 {
+    ui->setupUi(this);
+}
 
+RunRecoWindow::~RunRecoWindow()
+{
+    delete ui;
 }

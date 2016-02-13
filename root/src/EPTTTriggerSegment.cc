@@ -23,7 +23,7 @@
 //   -Valid options: <available options>
 //
 //#include "TObject.h"
-#include "EPTTTriggerSegment.hh"
+#include "root/include/EPTTTriggerSegment.hh"
 //#include "EEvent.hh"
 //#include "Etypes.hh"
 //#include <vector>

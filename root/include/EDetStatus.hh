@@ -15,8 +15,8 @@
 
 #include "TObject.h"
 #include "TArrayI.h"
-#include "Etypes.hh"
-#include "EFillable.hh"
+#include "root/include/Etypes.hh"
+#include "root/include/EFillable.hh"
 
 ////////////////////////////////////////////////////////////////////////////////
 //                                                                            //

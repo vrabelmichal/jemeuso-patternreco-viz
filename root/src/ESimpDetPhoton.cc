@@ -23,8 +23,8 @@
 //   -Valid options: <available options>
 //
 
-#include "ESimpDetPhoton.hh"
-#include "Etypes.hh"
+#include "root/include/ESimpDetPhoton.hh"
+#include "root/include/Etypes.hh"
 
 ClassImp(ESimpDetPhoton)
 

@@ -23,8 +23,8 @@
 //   -Valid options: <available options>
 //
 
-#include "ECCB_LTTTrigger.hh"
-#include "ECCB_LTTTriggerSegment.hh"
+#include "root/include/ECCB_LTTTrigger.hh"
+#include "root/include/ECCB_LTTTriggerSegment.hh"
 
 ClassImp(ECCB_LTTTrigger)
 TClonesArray* ECCB_LTTTrigger::fgCCB_LTTFlag = NULL;

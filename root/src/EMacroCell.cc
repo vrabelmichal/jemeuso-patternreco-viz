@@ -2,7 +2,7 @@
 // $Id: EMacroCell.cc 3066 2014-04-11 17:46:37Z fenu $
 //  created May, 23 2004
 
-#include "EMacroCell.hh"
+#include "root/include/EMacroCell.hh"
 
 ClassImp(EMacroCell)
 

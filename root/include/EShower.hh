@@ -8,7 +8,7 @@
 #include "TObject.h"
 #include "TClonesArray.h"
 #include "TVector3.h"
-#include "EFillable.hh"
+#include "root/include/EFillable.hh"
 
 class EShowerStep;
 
@@ -27,7 +27,7 @@ public:
 
     // getters
     inline Int_t GetNumSteps() {return fNumSteps;}
-    TClonesArray* GetSteps() { return fSteps; };
+    TClonesArray* GetSteps() { return fSteps; }
     inline EShowerStep* GetStep( Int_t );
     inline Float_t  GetEnergy() const { return fEnergy;}
     inline Float_t  GetTheta() const { return fTheta;}

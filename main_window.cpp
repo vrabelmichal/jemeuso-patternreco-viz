@@ -1,5 +1,7 @@
-#include "mainwindow.h"
-#include "ui/mainwindowhandwritten.h"
+#include "main_window.h"
+#include "ui/main_window_handwritten.h"
+#include "select_event_dialog.h"
+#include "run_reco_window.h"
 #include <QFileDialog>
 #include <iostream>
 
@@ -41,8 +43,6 @@ void MainWindow::initializeDefaults()
     ui->initializeDefaults(this);
 }
 
-
-
 MainWindow::~MainWindow()
 {
     delete ui;
@@ -61,6 +61,8 @@ void MainWindow::on_actionOpen_triggered()
 void MainWindow::on_actionSelect_event_triggered()
 {
     std::cout << "select event" << std::endl;
+    SelectEventDialog selectEventDialog;
+    selectEventDialog.exec();
 }
 
 void MainWindow::on_actionNext_event_triggered()
@@ -71,4 +73,6 @@ void MainWindow::on_actionNext_event_triggered()
 void MainWindow::on_actionRun_Reco_triggered()
 {
     std::cout << "run reco" << std::endl;
+    RunRecoWindow * pRunRecoWindow = new RunRecoWindow; // memory leak TODO: fix this
+    pRunRecoWindow->show();
 }

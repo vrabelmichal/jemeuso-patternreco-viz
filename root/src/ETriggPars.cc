@@ -23,7 +23,7 @@
 //   -Valid options: <available options>
 //
 
-#include "ETriggPars.hh"
+#include "root/include/ETriggPars.hh"
 
 ClassImp(ETriggPars)
 

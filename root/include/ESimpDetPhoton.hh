@@ -13,8 +13,8 @@
 #ifndef __ESIMPDETPHOTON_HH__
 #define __ESIMPDETPHOTON_HH__
 
-#include "EPhoton.hh"
-#include "EFillable.hh"
+#include "root/include/EPhoton.hh"
+#include "root/include/EFillable.hh"
 
 ////////////////////////////////////////////////////////////////////////////////
 //                                                                            //

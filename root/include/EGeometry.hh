@@ -13,7 +13,7 @@
 #ifndef __EGEOMETRY_HH__
 #define __EGEOMETRY_HH__
 
-#include "EFillable.hh"
+#include "root/include/EFillable.hh"
 #include <TRotation.h>
 #include <TVector3.h>
 #include <iostream>

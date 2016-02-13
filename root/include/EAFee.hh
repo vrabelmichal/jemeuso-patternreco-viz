@@ -13,8 +13,10 @@
 #ifndef __EAFEE_HH__
 #define __EAFEE_HH__
 
+//#include "TROOT.h"
+
 #include "TObject.h"
-#include "EFillable.hh"
+#include "root/include/EFillable.hh"
 
 ///////////////////////////////////////////////////////////////////////////////
 //                                                                           //
@@ -58,7 +60,7 @@ private:
     Float_t fDyCharge;        // dynode channel charge [coulomb]
     Bool_t fCherTrigg;        // true if Cerenkov trigger fired (if any, to be done!)
 
-    SetEVisitable()
+    //SetEVisitable()
 };
 
 #endif  /* __EAFEE_HH__ */

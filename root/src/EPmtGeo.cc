@@ -2,7 +2,7 @@
 // $Id: EPmtGeo.cc 2044 2005-07-17 01:37:58Z thea $
 //  created May, 24 2004
 
-#include "EPmtGeo.hh"
+#include "root/include/EPmtGeo.hh"
 
 //_____________________________________________________________________________
 EPmtGeo::EPmtGeo() {

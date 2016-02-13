@@ -11,7 +11,7 @@
  *                                                                           *
  *****************************************************************************/
 
-#include "EAnglePixelMap.hh"
+#include "root/include/EAnglePixelMap.hh"
 
 ClassImp(EAnglePixelMap)
 

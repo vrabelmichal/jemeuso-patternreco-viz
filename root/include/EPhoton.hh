@@ -17,7 +17,7 @@
 #include "TObject.h"
 #include "TVector3.h"
 
-#include "EFillable.hh"
+#include "root/include/EFillable.hh"
 
 ////////////////////////////////////////////////////////////////////////////////
 //                                                                            //

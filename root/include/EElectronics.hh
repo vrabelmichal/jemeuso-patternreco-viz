@@ -6,7 +6,7 @@
 #define __EELECTRONICS_HH_
 
 #include "TObject.h"
-#include "EFillable.hh"
+#include "root/include/EFillable.hh"
 
 // data from Euso electronics
 class EElectronics : public TObject {

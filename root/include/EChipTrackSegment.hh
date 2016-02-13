@@ -14,7 +14,7 @@
 #define __ECHIPTRACKSEGMENT_HH__
 
 #include "TObject.h"
-#include "EFillable.hh"
+#include "root/include/EFillable.hh"
 
 ////////////////////////////////////////////////////////////////////////////////
 //                                                                            //

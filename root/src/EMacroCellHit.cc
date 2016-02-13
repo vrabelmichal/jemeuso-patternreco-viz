@@ -2,7 +2,7 @@
 // $Id: EMacroCellHit.cc 718 2004-06-11 15:12:41Z thea $
 //  created May, 23 2004
 
-#include "EMacroCellHit.hh"
+#include "root/include/EMacroCellHit.hh"
 
 ClassImp(EMacroCellHit)
 

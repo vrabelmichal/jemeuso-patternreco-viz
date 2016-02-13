@@ -10,14 +10,14 @@
  *                                                                           *
  *****************************************************************************/
 
-#include "EDetector.hh"
-#include "Etypes.hh"
+#include "root/include/EDetector.hh"
+#include "root/include/Etypes.hh"
 
-#include "EDetPhoton.hh"
-#include "EMacroCellHit.hh"
-#include "EMacroCell.hh"
-#include "EFee.hh"
-#include "EAFee.hh"
+#include "root/include/EDetPhoton.hh"
+#include "root/include/EMacroCellHit.hh"
+#include "root/include/EMacroCell.hh"
+#include "root/include/EFee.hh"
+#include "root/include/EAFee.hh"
 
 ClassImp(EDetector)
 

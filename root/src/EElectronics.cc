@@ -2,8 +2,8 @@
 // $Id: EElectronics.cc 831 2004-06-25 17:06:02Z thea $
 // A.Thea created Jun, 23 2004
 
-#include "EElectronics.hh"
-#include "Etypes.hh"
+#include "root/include/EElectronics.hh"
+#include "root/include/Etypes.hh"
 
 ClassImp(EElectronics)
 

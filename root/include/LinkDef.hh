@@ -10,10 +10,10 @@
 #pragma link off all classes;
 #pragma link off all functions;
 
-// namespaces
+//// namespaces
 #pragma link C++ namespace sou;
 
-// Global Enums
+//// Global Enums
 #pragma link C++ enum EPhotonType;
 #pragma link C++ enum EDetectorSystem;
 #pragma link C++ enum EFocalSurfaceElement;
@@ -21,14 +21,14 @@
 #pragma link C++ enum EHeader::EStatus;
 #pragma link C++ enum EDetector::EPhotonFillingMode;
 
-// Fillers
+//// Fillers
 #pragma link C++ class EFiller+;
 #pragma link C++ class EFillable+;
 
-// utility class
+//// utility class
 #pragma link C++ class EReader+;
 
-// EEvent Classes
+//// EEvent Classes
 #pragma link C++ class EEvent+;
 #pragma link C++ class EEvTreeLink+;
 #pragma link C++ class EHeader-;
@@ -67,7 +67,7 @@
 #pragma link C++ class ESimpDetPhoton+;
 #pragma link C++ class EPhotoElectron+;
 
-// ERunParameters Classes
+//// ERunParameters Classes
 #pragma link C++ class EAnglePixelMap+;
 #pragma link C++ class EPmtGeo+;
 #pragma link C++ class EPmtData+;
@@ -76,7 +76,7 @@
 #pragma link C++ class ETriggPars+;
 #pragma link C++ class EChipTriggPars+;
 
-// Optics Response Classes
+//// Optics Response Classes
 #pragma link C++ class EOpticsResponse+;
 #pragma link C++ class EORHeader+;
 #pragma link C++ class EORSample+;

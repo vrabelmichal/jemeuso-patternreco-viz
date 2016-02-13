@@ -23,7 +23,7 @@
 //   -Valid options: <available options>
 //
 
-#include "EGeometry.hh"
+#include "root/include/EGeometry.hh"
 
 ClassImp(EGeometry)
 

@@ -14,7 +14,7 @@
 #define __ETRIGGPARS_HH__
 
 #include <TObject.h>
-#include "Etypes.hh"
+#include "root/include/Etypes.hh"
 
 ////////////////////////////////////////////////////////////////////////////////
 //                                                                            //

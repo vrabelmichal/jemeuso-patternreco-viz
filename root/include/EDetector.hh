@@ -20,11 +20,11 @@
 #include "TClonesArray.h"
 #include "TString.h"
 
-#include "EFillable.hh"
+#include "root/include/EFillable.hh"
 
-#include "ERunParameters.hh"
-#include "EElectronics.hh"
-#include "EDetStatus.hh"
+#include "root/include/ERunParameters.hh"
+#include "root/include/EElectronics.hh"
+#include "root/include/EDetStatus.hh"
 
 class EDetPhoton;
 class EMacroCellHit;

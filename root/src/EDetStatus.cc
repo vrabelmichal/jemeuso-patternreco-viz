@@ -23,7 +23,7 @@
 //   -Valid options: <available options>
 //
 
-#include "EDetStatus.hh"
+#include "root/include/EDetStatus.hh"
 
 ClassImp(EDetStatus)
 

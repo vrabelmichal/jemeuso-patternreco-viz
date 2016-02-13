@@ -3,15 +3,24 @@
 
 #include <QWidget>
 
-class RunRecoDialog : public QWidget
+namespace Ui {
+class RunRecoWindow;
+}
+
+class RunRecoWindow : public QWidget
 {
     Q_OBJECT
 public:
-    explicit RunRecoDialog(QWidget *parent = 0);
+    explicit RunRecoWindow(QWidget *parent = 0);
+    ~RunRecoWindow();
 
 signals:
 
 public slots:
+
+
+private:
+    Ui::RunRecoWindow * ui;
 };
 
 #endif // RUNRECODIALOG_H

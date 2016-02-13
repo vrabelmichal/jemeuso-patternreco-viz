@@ -22,9 +22,9 @@
 
 
 
-#include "EFillable.hh"
-#include "EPTTTrigger.hh"//guzman added them to be able to use this classes in RootInputModule
-#include "ECCB_LTTTrigger.hh"//guzman
+#include "root/include/EFillable.hh"
+#include "root/include/EPTTTrigger.hh"//guzman added them to be able to use this classes in RootInputModule
+#include "root/include/ECCB_LTTTrigger.hh"//guzman
 class ETruth;
 class EHeader;
 class EGeometry;

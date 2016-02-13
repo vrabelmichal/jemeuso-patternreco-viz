@@ -23,9 +23,9 @@
 //   -Valid options: <available options>
 //
 
-#include "EOpticsResponse.hh"
-#include "EORSample.hh"
-#include "EORHeader.hh"
+#include "root/include/EOpticsResponse.hh"
+#include "root/include/EORSample.hh"
+#include "root/include/EORHeader.hh"
 
 #include <TFile.h>
 #include <TTree.h>

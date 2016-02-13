@@ -23,8 +23,8 @@
 //   -Valid options: <available options>
 //
 
-#include "EPhotoElectron.hh"
-#include "Etypes.hh"
+#include "root/include/EPhotoElectron.hh"
+#include "root/include/Etypes.hh"
 
 ClassImp(EPhotoElectron)
 

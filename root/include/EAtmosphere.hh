@@ -8,7 +8,7 @@
 #include "TObject.h"
 #include "TClonesArray.h"
 
-#include "EFillable.hh"
+#include "root/include/EFillable.hh"
 
 class EBunchPhotons;
 class ESinglePhoton;

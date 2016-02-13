@@ -8,7 +8,7 @@
 #include "Rtypes.h"
 #include "TClass.h"
 
-#include "EFiller.hh"
+#include "root/include/EFiller.hh"
 
 #define SetEVisitable()     friend class EEventTruthAdder;              \
                             friend class EShowerFiller;                 \
@@ -38,7 +38,8 @@ public:
 
 private:
 
-  ClassDef (EFillable, 1)};
+  ClassDef (EFillable, 1)
+};
 
 inline Bool_t
 EFillable::Fill (EFiller & f)

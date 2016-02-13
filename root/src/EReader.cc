@@ -23,8 +23,8 @@
 //   -Valid options: <available options>
 //
 
-#include "EReader.hh"
-#include "EEvent.hh"
+#include "root/include/EReader.hh"
+#include "root/include/EEvent.hh"
 #include <TList.h>
 #include <TMap.h>
 #include <TFile.h>

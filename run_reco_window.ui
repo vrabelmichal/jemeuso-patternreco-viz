@@ -1,21 +1,88 @@
-<ui version="4.0" >
- <author></author>
- <comment></comment>
- <exportmacro></exportmacro>
- <class>Form</class>
- <widget class="QWidget" name="Form" >
-  <property name="geometry" >
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RunRecoWindow</class>
+ <widget class="QWidget" name="RunRecoWindow">
+  <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>422</width>
+    <height>383</height>
    </rect>
   </property>
-  <property name="windowTitle" >
+  <property name="windowTitle">
    <string>Form</string>
   </property>
+  <layout class="QFormLayout" name="formLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="first_event_spinner_label">
+     <property name="text">
+      <string>First event</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QSpinBox" name="spinBox"/>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="last_event_spinner_label">
+     <property name="text">
+      <string>Last event</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QSpinBox" name="spinBox_2"/>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="usrcfg_file_inp_label">
+     <property name="text">
+      <string>User config file</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QLineEdit" name="usrcfg_file_path_inp"/>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="modules_file_inp_label">
+     <property name="text">
+      <string>Modules file</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QLineEdit" name="modules_file_path_inp"/>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="recofile_path_inp_label">
+     <property name="text">
+      <string>Reco file path</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="QLineEdit" name="recofile_path_inp"/>
+   </item>
+   <item row="5" column="0">
+    <widget class="QLabel" name="command_label">
+     <property name="text">
+      <string>Command</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0" colspan="2">
+    <widget class="QPlainTextEdit" name="plainTextEdit"/>
+   </item>
+   <item row="8" column="0" colspan="2">
+    <widget class="QPushButton" name="pushButton">
+     <property name="text">
+      <string>Run Reco</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
  </widget>
- <pixmapfunction></pixmapfunction>
+ <resources/>
  <connections/>
 </ui>

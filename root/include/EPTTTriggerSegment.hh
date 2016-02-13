@@ -14,7 +14,7 @@
 #define __EPTTTRIGGERSEGMENT_HH__
 
 #include "TObject.h"
-#include "EFillable.hh"
+#include "root/include/EFillable.hh"
 
 ////////////////////////////////////////////////////////////////////////////////
 //                                                                            //
@@ -105,6 +105,9 @@ private:
   Int_t fMaxChipID;// EC id of the trigger
   Int_t fPdmID;//PDM id of the trigger
 
-SetEVisitable ()ClassDef (EPTTTriggerSegment, 1)};
+SetEVisitable()
+ClassDef (EPTTTriggerSegment, 1)
+
+};
 
 #endif /* __EPTTTRIGGERSEGMENT_HH__ */

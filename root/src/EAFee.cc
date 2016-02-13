@@ -10,7 +10,9 @@
  *                                                                           *
  *****************************************************************************/
 
-#include "EAFee.hh"
+#include "TROOT.h"
+
+#include "root/include/EAFee.hh"
 
 ClassImp(EAFee)
 

@@ -2,9 +2,9 @@
 // $Id: EAtmosphere.cc 2877 2011-04-25 14:15:15Z biktem $
 // Alessandro Thea created May, 28 2004
 
-#include "EAtmosphere.hh"
-#include "ESinglePhoton.hh"
-#include "EBunchPhotons.hh"
+#include "root/include/EAtmosphere.hh"
+#include "root/include/ESinglePhoton.hh"
+#include "root/include/EBunchPhotons.hh"
 
 ClassImp(EAtmosphere)
 

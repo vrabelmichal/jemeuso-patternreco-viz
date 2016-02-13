@@ -8,7 +8,7 @@
 #include "TObject.h"
 #include "TVector3.h"
 
-#include "ERunParsFiller.hh"
+#include "root/include/ERunParsFiller.hh"
 
 // EPmtGeo
 // Geographical information of each pmt
@@ -69,7 +69,7 @@ private:
     Float_t fYAxisY;                // y component of the pmt y axis
     Float_t fYAxisZ;                // z component of the pmt y axis
 
-    ClassDef(EPmtGeo,1); 
+    ClassDef(EPmtGeo,1)
 
     ERunParsVisitable()
 };

@@ -23,8 +23,8 @@
 //   -Valid options: <available options>
 //
 
-#include "EPTTTrigger.hh"
-#include "EPTTTriggerSegment.hh"
+#include "root/include/EPTTTrigger.hh"
+#include "root/include/EPTTTriggerSegment.hh"
 
 ClassImp (EPTTTrigger)
      TClonesArray *EPTTTrigger::fgPTTFlag = NULL;

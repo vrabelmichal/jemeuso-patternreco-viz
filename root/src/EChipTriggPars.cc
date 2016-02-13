@@ -24,9 +24,9 @@
 //   -Valid options: <available options>
 //
 
-#include "EChipTriggPars.hh"
-#include "ERunParameters.hh"
-#include "ESystemOfUnits.hh"
+#include "root/include/EChipTriggPars.hh"
+#include "root/include/ERunParameters.hh"
+#include "root/include/ESystemOfUnits.hh"
 
 using namespace TMath;
 using namespace sou;

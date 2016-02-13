@@ -14,7 +14,7 @@
 #define __ELTTTRIGGERSEGMENT_HH__
 
 #include "TObject.h"
-#include "EFillable.hh"
+#include "root/include/EFillable.hh"
 
 ////////////////////////////////////////////////////////////////////////////////
 //                                                                            //
@@ -59,14 +59,14 @@ ELTTTriggerSegment ( const ELTTTriggerSegment& other );
 
 private:
 
-  Int_t fNumEvt;//tells how many PDMs were triggering each event
-  Int_t fMaxCount;//integrated counts for the triggering event
-  Int_t   fMaxGtu;//gtu where the trigger has been generated
-  Int_t   fMaxRow; //row of the pixel where the trigger has been generated
-   Int_t    fMaxCol;//col of the pixel where the trigger has been generated
- Int_t     fMaxChipID;// PMT where the trigger has been generated
- Int_t     fMaxDir;// direction under which the trigger has been generated
-  Int_t fPdmID;
+    Int_t fNumEvt;//tells how many PDMs were triggering each event
+    Int_t fMaxCount;//integrated counts for the triggering event
+    Int_t fMaxGtu;//gtu where the trigger has been generated
+    Int_t fMaxRow; //row of the pixel where the trigger has been generated
+    Int_t fMaxCol;//col of the pixel where the trigger has been generated
+    Int_t fMaxChipID;// PMT where the trigger has been generated
+    Int_t fMaxDir;// direction under which the trigger has been generated
+    Int_t fPdmID;
     SetEVisitable()
     ClassDef(ELTTTriggerSegment,1)
 };

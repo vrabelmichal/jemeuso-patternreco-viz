@@ -23,10 +23,10 @@
 //   -Valid options: <available options>
 //
 
-#include "ESimpDetPhoton.hh"
-#include "ESimpleDetector.hh"
-#include "EPhotoElectron.hh"
-#include "Etypes.hh"
+#include "root/include/ESimpDetPhoton.hh"
+#include "root/include/ESimpleDetector.hh"
+#include "root/include/EPhotoElectron.hh"
+#include "root/include/Etypes.hh"
 
 ClassImp(ESimpleDetector)
 

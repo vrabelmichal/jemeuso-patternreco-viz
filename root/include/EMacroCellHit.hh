@@ -6,7 +6,7 @@
 #define __EMACROCELLHIT_HH_
 
 #include "TObject.h"
-#include "EFillable.hh"
+#include "root/include/EFillable.hh"
 
 // decription of a macrocell hit
 class EMacroCellHit : public TObject {

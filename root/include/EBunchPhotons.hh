@@ -10,8 +10,8 @@
 #include "TVector3.h"
 #include "TString.h"
 
-#include "EFillable.hh"
-#include "ESinglePhoton.hh"
+#include "root/include/EFillable.hh"
+#include "root/include/ESinglePhoton.hh"
 
 #include <stdexcept>
 #include <iostream>

@@ -2,7 +2,7 @@
 // $Id: EPmtData.cc 2804 2008-10-09 12:10:06Z biktem $
 //  created May, 24 2004
 
-#include "EPmtData.hh"
+#include "root/include/EPmtData.hh"
 
 ClassImp(EPmtData)
 

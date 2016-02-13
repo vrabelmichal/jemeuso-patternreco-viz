@@ -13,13 +13,13 @@
 #ifndef __ESIMPLEDETECTOR_HH__
 #define __ESIMPLEDETECTOR_HH__
 
-#include "EFillable.hh"
+#include "root/include/EFillable.hh"
 #include "TROOT.h"
 #include "TObject.h"
 #include "TRef.h"
 #include "TClonesArray.h"
 #include "TString.h"
-#include "EDetector.hh"
+#include "root/include/EDetector.hh"
 
 class ESimpDetPhoton;
 class EPhotoElectron;

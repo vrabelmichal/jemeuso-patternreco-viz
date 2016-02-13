@@ -23,7 +23,7 @@
 //   -Valid options: <available options>
 //
 
-#include "EChipTrackSegment.hh"
+#include "root/include/EChipTrackSegment.hh"
 
 ClassImp(EChipTrackSegment)
 

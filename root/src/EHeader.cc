@@ -15,7 +15,7 @@
 //  EHeader
 //  
 
-#include "EHeader.hh"
+#include "root/include/EHeader.hh"
 #include <TClass.h>
 
 ClassImp(EHeader)

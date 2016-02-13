@@ -2,7 +2,7 @@
 // $Id: ESinglePhoton.cc 2765 2006-11-15 14:59:23Z moreggia $
 // A.Thea created Jun,  9 2004
 
-#include "ESinglePhoton.hh"
+#include "root/include/ESinglePhoton.hh"
 
 ClassImp(ESinglePhoton)
 

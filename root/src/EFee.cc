@@ -10,7 +10,7 @@
  *                                                                           *
  *****************************************************************************/
   
-#include "EFee.hh"
+#include "root/include/EFee.hh"
 
 ClassImp(EFee)
 

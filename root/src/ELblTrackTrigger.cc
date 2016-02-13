@@ -23,8 +23,8 @@
 //   -Valid options: <available options>
 //
 
-#include "ELblTrackTrigger.hh"
-#include "ELblTrackSegment.hh"
+#include "root/include/ELblTrackTrigger.hh"
+#include "root/include/ELblTrackSegment.hh"
 
 ClassImp(ELblTrackTrigger)
 

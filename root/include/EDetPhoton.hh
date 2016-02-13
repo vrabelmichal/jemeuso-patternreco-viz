@@ -8,7 +8,7 @@
 #include "EPhoton.hh"
 #include "TVector3.h"
 
-#include "EFillable.hh"
+#include "root/include/EFillable.hh"
 
 
 class EDetPhoton : public EPhoton {

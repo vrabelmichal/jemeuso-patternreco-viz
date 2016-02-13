@@ -6,7 +6,7 @@
 #define __EPMTDATA_HH_
 
 #include "TObject.h"
-#include "ERunParsFiller.hh"
+#include "root/include/ERunParsFiller.hh"
 
 // EPmtData
 // common pmts' data

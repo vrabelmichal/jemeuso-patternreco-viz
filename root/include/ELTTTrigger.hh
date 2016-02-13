@@ -13,7 +13,7 @@
 #ifndef __ELTTTRIGGER_HH__
 #define __ELTTTRIGGER_HH__
 
-#include "EFillable.hh"
+#include "root/include/EFillable.hh"
 #include "TObject.h"
 #include "TClonesArray.h"
 

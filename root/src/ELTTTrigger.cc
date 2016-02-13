@@ -23,8 +23,8 @@
 //   -Valid options: <available options>
 //
 
-#include "ELTTTrigger.hh"
-#include "ELTTTriggerSegment.hh"
+#include "root/include/ELTTTrigger.hh"
+#include "root/include/ELTTTriggerSegment.hh"
 
 ClassImp(ELTTTrigger)
 TClonesArray* ELTTTrigger::fgLTTFlag = NULL;

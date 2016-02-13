@@ -11,8 +11,8 @@
  *                                                                           *
  *****************************************************************************/
 
-#include "EPhoton.hh"
-#include "Etypes.hh"
+#include "root/include/EPhoton.hh"
+#include "root/include/Etypes.hh"
 
 ClassImp(EPhoton)
 

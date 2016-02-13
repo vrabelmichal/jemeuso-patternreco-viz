@@ -23,7 +23,7 @@
 //   -Valid options: <available options>
 //
 
-#include "EORHeader.hh"
+#include "root/include/EORHeader.hh"
 
 ClassImp(EORHeader)
 

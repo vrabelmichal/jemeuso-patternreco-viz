@@ -14,7 +14,7 @@
 #define __ECCB_LTTTRIGGERSEGMENT_HH__
 
 #include "TObject.h"
-#include "EFillable.hh"
+#include "root/include/EFillable.hh"
 
 ////////////////////////////////////////////////////////////////////////////////
 //                                                                            //

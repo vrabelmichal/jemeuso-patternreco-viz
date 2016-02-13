@@ -1,14 +1,16 @@
-#include "selecteventdialog2.h"
-#include "ui_selecteventdialog2.h"
+#include "select_event_dialog.h"
+#include "ui_select_event_dialog.h"
+#include <iostream>
 
-SelectEventDialog2::SelectEventDialog2(QWidget *parent) :
+SelectEventDialog::SelectEventDialog(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::SelectEventDialog2)
+    ui(new Ui::SelectEventDialog)
 {
     ui->setupUi(this);
+    std::cout << "after SETUP UI" << std::endl;
 }
 
-SelectEventDialog2::~SelectEventDialog2()
+SelectEventDialog::~SelectEventDialog()
 {
     delete ui;
 }

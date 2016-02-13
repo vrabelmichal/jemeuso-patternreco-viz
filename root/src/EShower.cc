@@ -2,8 +2,8 @@
 // $Id: EShower.cc 2918 2011-06-10 22:22:31Z mabl $
 //  created May, 23 2004
 
-#include "EShower.hh"
-#include "Etypes.hh"
+#include "root/include/EShower.hh"
+#include "root/include/Etypes.hh"
 
 ClassImp(EShower)
 

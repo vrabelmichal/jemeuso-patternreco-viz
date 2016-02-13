@@ -23,7 +23,7 @@
 //   -Valid options: <available options>
 //
 //#include "TObject.h"
-#include "ECCB_LTTTriggerSegment.hh"
+#include "root/include/ECCB_LTTTriggerSegment.hh"
 //#include "EEvent.hh"
 //#include "Etypes.hh"
 //#include <vector>

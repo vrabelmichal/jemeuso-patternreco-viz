@@ -13,11 +13,11 @@
 #ifndef __ECHIPTRIGGPARS_HH__
 #define __ECHIPTRIGGPARS_HH__
 
-#include "ETriggPars.hh"
+#include "root/include/ETriggPars.hh"
 #include "TString.h"
 #include "TRef.h"
-#include "Etypes.hh"
-#include "EFillable.hh"
+#include "root/include/Etypes.hh"
+#include "root/include/EFillable.hh"
 
 ////////////////////////////////////////////////////////////////////////////////
 //                                                                            //

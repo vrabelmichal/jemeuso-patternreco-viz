@@ -10,12 +10,12 @@
 #include <TVector3.h>
 #include <TArrayF.h>
 
-#include "ERunParsFiller.hh"
-#include "EPmtData.hh"
-#include "EPmtGeo.hh"
-#include "EAnglePixelMap.hh"
-#include "ETriggPars.hh"
-#include "Etypes.hh"
+#include "root/include/ERunParsFiller.hh"
+#include "root/include/EPmtData.hh"
+#include "root/include/EPmtGeo.hh"
+#include "root/include/EAnglePixelMap.hh"
+#include "root/include/ETriggPars.hh"
+#include "root/include/Etypes.hh"
 #include <TMath.h>
 
 enum ESquareCorner { kTopLeftCorner     = 0,

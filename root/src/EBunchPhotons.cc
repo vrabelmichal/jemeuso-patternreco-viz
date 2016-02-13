@@ -2,7 +2,7 @@
 // $Id: EBunchPhotons.cc 2863 2011-02-18 11:00:44Z biktem $
 // A.Thea created Jun, 13 2004
 
-#include "EBunchPhotons.hh"
+#include "root/include/EBunchPhotons.hh"
 
 ClassImp(EBunchPhotons)
 

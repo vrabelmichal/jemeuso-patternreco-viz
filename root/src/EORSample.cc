@@ -23,7 +23,7 @@
 //   -Valid options: <available options>
 //
 
-#include "EORSample.hh"
+#include "root/include/EORSample.hh"
 #include <TH2F.h>
 #include <TMath.h>
 using namespace TMath;
